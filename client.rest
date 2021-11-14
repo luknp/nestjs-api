@@ -1,0 +1,21 @@
+@HOST = http://localhost
+@PORT = 3000
+@BASE_URL = {{HOST}}:{{PORT}}
+
+
+
+
+GET {{BASE_URL}}/users HTTP/1.1
+###
+
+GET {{BASE_URL}} HTTP/1.1
+###
+
+
+POST {{BASE_URL}}/users HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Jan",
+    "lastName": "Kowal"
+}
